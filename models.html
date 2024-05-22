@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Models</title>
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet">
+        <style>
+        /* Styling for mobile menu */
+        #mobile-menu {
+            transition: max-height 0.3s ease-in-out;
+        }
+    </style>
+    </head>
+    <body class="bg-white text-black font-sans">
+        <!-- Header section -->
+        <header class="flex justify-between items-center py-2 px-8">
+            <div class="flex items-center space-x-9">
+                <!-- Title -->
+                <a href="home.html" class="font-bold text-2xl">Hidden Pepe</a>
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex space-x-6 text-lg">
+                    <a href="https://solscan.io/token/GssEbrRKxaghLZqCqT33M4dUkPcioTFdF1m1wtiwgvLq" class="hover:underline">SolScan</a>
+                    <a href="https://github.com/hidden-pepe" class="hover:underline">GitHub</a>
+                    <a href="https://x.com/pepe_hidden"
+                        class="hover:underline">Twitter</a>
+                </nav>
+            </div>
+            <!-- Secondary Navigation -->
+            <div class="flex items-center space-x-6">
+                <!-- Search Bar -->
+                <div class="relative hidden lg:block">
+                    <input type="text" placeholder="Search"
+                        class="border rounded-xl py-1 pl-10 pr-3 focus:outline-none focus:border-gray-500">
+                    <img src="search-icon.png" alt="Search Icon"
+                        class="absolute left-4 top-3 h-3 w-3">
+                </div>
+                <!-- Other Links -->
+                <a href="https//:dexscreener.com"
+                    class="hidden md:block hover:underline text-lg">Chart</a>
+                <a href="models.html"
+                    class="hidden md:block hover:underline text-lg">AiModels</a>
+                <a href="whitepaper.pdf"
+                    class="bg-black text-white py-2 px-4 rounded-xl hover:bg-gray-800 hidden md:block">WhitePaper</a>
+                <!-- Mobile Menu Toggle Button -->
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden" id="mobile-menu" style="display: none;">
+            <nav class="px-8 pt-2 pb-4 space-y-1">
+                <a href="https://solscan.io/token/GssEbrRKxaghLZqCqT33M4dUkPcioTFdF1m1wtiwgvLq"
+                    class="block text-lg font-bold hover:underline">SolScan</a>
+                <a href="https://github.com/hidden-pepe"
+                    class="block text-lg font-bold hover:underline">GitHub</a>
+                <a href="https://x.com/pepe_hidden"
+                    class="block text-lg font-bold hover:underline">Twitter</a>
+                <a href="https://dexscreener.com"
+                    class="block text-lg font-bold hover:underline">Chart</a>
+                <a href="models.html"
+                    class="block text-lg font-bold hover:underline">AiModels</a>
+                <a href="whitepaper.pdf"
+                    class="block text-lg font-bold hover:underline">WhitePaper</a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <main
+            class="flex flex-col items-center justify-center min-h-screen text-center px-8 md:px-0">
+            <!-- Logo -->
+            <img src="logo.png" alt="Logo" class="h-36 mb-6">
+            <!-- Main Heading -->
+            <h1 class="text-4xl font-bold mb-6">
+                AI Model<br>
+                [ Chat model ]
+            </h1>
+            <!-- Subheading -->
+            <p class="text-lg text-gray-600 mb-6">
+                Comming Soon
+            </p>
+
+            <!-- Launch AI -->
+            <a href="whitepaper.pdf"
+                class="bg-black text-white py-2 px-5 rounded-xl flex items-center justify-center space-x-1 hover:bg-gray-700 text-xl">
+                <span class="mr-1">White Paper</span>
+                <svg class="w-4 h-4 mt-0.5 transform rotate-180" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M5 15l7-7 7 7"></path>
+                </svg>
+            </a>
+
+            <!-- Additional Information -->
+            <p class="text-xs text-gray-500 mt-5">
+                Try our AI models soon<br>
+                on Telegram and on the Web.</p>
+        </main>
+
+        <!-- Footer -->
+        <footer class="flex items-center justify-between p-4 px-8">
+            <p class="text-xs text-gray-500">Made by Hidden Pepe</p>
+            <div class="flex items-center space-x-4">
+                <a class="text-gray-500 text-xs">ep.pepe.mail@gmail.com</a>
+            </div>
+        </footer>
+
+        <!-- JavaScript for Mobile Menu Toggle -->
+        <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+    </body>
+</html>
